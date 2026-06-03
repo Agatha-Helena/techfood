@@ -18,7 +18,7 @@ function solicitarNomeCliente(){
 
   if(!btnConfirmar || !inputNome) return
   btnConfirmar.addEventListener("click", function(){
-    const nome = inputNome.ariaValueMax.trim()
+    const nome = inputNome.value.trim()
     if(!nome){
       inputNome.focus()
       return
