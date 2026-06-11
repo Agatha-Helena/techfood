@@ -1,3 +1,5 @@
+// AVISO: Esse código foi feito com auxilio de uma IA!!! Pedi explicação, compreendi algumas coisas (então deixei comentários da IA para reler) e modifiquei algumas informações, logicamente. Realmente estava com dúvida na matéria, então recorri a isso.
+
 document.addEventListener("DOMContentLoaded", function () {
   inicializarCadastro();
 });
@@ -10,13 +12,11 @@ function inicializarCadastro() {
 
   if (!form) return;
 
-  // Submit do formulário — valida e envia ao back-end
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // impede o reload padrão do navegador
     salvarNovoPrato();
   });
 
-  // Botão Limpar — zera todos os campos sem precisar recarregar
   if (btnLimpar) {
     btnLimpar.addEventListener("click", limparFormulario);
   }
@@ -111,7 +111,6 @@ function validarFormulario() {
   return valido;
 }
 
-
 async function salvarNovoPrato() {
   if (!validarFormulario()) return;
 
@@ -152,7 +151,6 @@ async function salvarNovoPrato() {
   }
 }
 
-
 function exibirFeedback(elemento, tipo, mensagem) {
   if (!elemento) return;
 
@@ -184,21 +182,17 @@ function adicionarPratoNaListaRecentes(prato) {
   lista.appendChild(li);
 }
 
-
 function limparFormulario() {
   const form = document.querySelector("#form-cadastro");
   if (form) form.reset();
 
-  // Limpa erros de validação
   document.querySelectorAll(".campo-erro").forEach(function (span) {
     span.textContent = "";
   });
 
-  // Reseta o contador de caracteres
   const contador = document.querySelector("#contador-descricao");
   if (contador) contador.textContent = "0 / 200";
 
-  // Oculta o preview de imagem
   const container = document.querySelector("#preview-imagem-container");
   if (container) container.style.display = "none";
 }
