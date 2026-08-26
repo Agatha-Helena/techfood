@@ -102,7 +102,7 @@ function inicializarVitrine() {
       //função que enviará as informações ao WebStorage
       salvarPedido(produtoId, quantidade, clicado);
 
-      //atualizarContadorPedidos()
+      atualizarContadorPedidos()
 
     } //fechamento btn-pedido
   }); //fechamento do ouvinte

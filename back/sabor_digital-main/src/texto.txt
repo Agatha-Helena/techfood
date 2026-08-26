@@ -1,0 +1,6 @@
+ajeitar todos os arquivos quando a internet voltar:
+
+UsuarioController (feito)
+UsuarioRepository (feito)
+UsuarioRoutes (feito e mudado para authRoutes, pois pedia no arquivo)
+UsuarioService (feito)
