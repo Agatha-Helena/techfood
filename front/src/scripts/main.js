@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function renderizarCardapio(){
-  const grid = document.getElementById("#grid-cardapio")
+  const grid = document.getElementById("grid-cardapio")
   if(!grid) return
   grid.innerHTML = "<p class='loading'> Carregando cardápio... </p>"
   try{
