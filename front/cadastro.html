@@ -1,3 +1,4 @@
+<!-- AVISO: Esse código foi feito com auxilio de uma IA!!! Pedi explicação, compreendi e modifiquei algumas informações, logicamente. Realmente estava com dúvida na matéria, então recorri a isso. -->
 <!doctype html>
 
 <html lang="pt-BR">
@@ -18,24 +19,18 @@
     <h2 class="titulo-secao">Novo Prato</h2>
     <div id="feedback-cadastro"></div>
     <form id="form-cadastro">
-
-        <!-- Nome -->
-
         <div class="campo-formulario">
             <label for="input-nome">Nome do prato</label>
             <input
                 type="text"
                 id="input-nome"
-                placeholder="Ex.: Pizza Margherita"
+                placeholder="Ex.: Pizza de Calabresa"
             >
             <span
                 id="erro-nome"
                 class="campo-erro">
             </span>
         </div>
-
-        <!-- Descrição -->
-
         <div class="campo-formulario">
             <label for="input-descricao">Descrição</label>
             <textarea
@@ -52,16 +47,13 @@
                 class="campo-erro">
             </span>
         </div>
-
-        <!-- Preço -->
-
         <div class="campo-formulario">
             <label for="input-preco">Preço</label>
             <input
                 type="number"
                 id="input-preco"
-                min="0.01"
-                step="0.01"
+                min="1.00"
+                step="1.00" 
                 placeholder="0,00"
             >
             <span
@@ -69,7 +61,6 @@
                 class="campo-erro">
             </span>
         </div>
-        <!-- Categoria -->
         <div class="campo-formulario">
             <label for="select-categoria">Categoria</label>
             <select id="select-categoria">
@@ -98,7 +89,6 @@
             <span id="erro-categoria" class="campo-erro">
             </span>
         </div>
-        <!-- URL da imagem -->
         <div class="campo-formulario">
             <label for="input-imagem">
                 URL da Imagem
@@ -107,14 +97,10 @@
             <span id="erro-imagem" class="campo-erro">
             </span>
         </div>
-
-        <!-- Preview -->
-
         <div id="preview-imagem-container">
             <p>Pré-visualização:</p>
             <img id="preview-imagem" src="" alt="Preview da imagem do prato">
         </div>
-        <!-- Botões -->
         <div class="acoes-formulario">
             <button type="submit" id="btn-salvar-prato">
                 Salvar
@@ -127,14 +113,6 @@
             </button>
         </div>
     </form>
-</section>
-
-<!-- Cadastros recentes -->
-
-<section id="secao-recentes" style="display:none;">
-    <h2>Cadastros Recentes</h2>
-    <ul id="lista-recentes">
-    </ul>
 </section>
 </main>
 <footer id="rodape">

@@ -1,3 +1,5 @@
+/* AVISO: Esse código foi feito com auxilio de uma IA!!! Nesse caso, estava sem tempo, pois achei que era para entregar hoje durante a aula. */
+
 :root {
   --cor-primaria: #2c3e50;
   --cor-destaque: #e67e22;
@@ -11,10 +13,6 @@
   --cor-borda: #dcdcdc;
 }
 
-/* ==========================
-   Estrutura Geral
-========================== */
-
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -27,10 +25,6 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
-/* ==========================
-   Cabeçalho
-========================== */
 
 #topo-loja {
   background-color: var(--cor-primaria);
@@ -50,10 +44,6 @@ main {
   opacity: 0.9;
 }
 
-/* ==========================
-   Card do formulário
-========================== */
-
 #secao-cadastro {
   background: white;
   border-radius: 16px;
@@ -66,10 +56,6 @@ main {
   color: var(--cor-primaria);
   margin-bottom: 2rem;
 }
-
-/* ==========================
-   Campos
-========================== */
 
 .campo-formulario {
   display: flex;
@@ -105,10 +91,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================
-   Contador
-========================== */
-
 #contador-descricao {
   text-align: right;
   margin-top: 0.4rem;
@@ -116,20 +98,12 @@ textarea {
   color: #888;
 }
 
-/* ==========================
-   Erros
-========================== */
-
 .campo-erro {
   min-height: 18px;
   margin-top: 0.35rem;
   color: var(--cor-vermelho);
   font-size: 0.85rem;
 }
-
-/* ==========================
-   Preview da imagem
-========================== */
 
 #preview-imagem-container {
   margin-top: 1rem;
@@ -153,10 +127,6 @@ textarea {
   object-fit: cover;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
-
-/* ==========================
-   Botões
-========================== */
 
 .acoes-formulario {
   display: flex;
@@ -213,10 +183,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* ==========================
-   Feedback
-========================== */
-
 #feedback-cadastro {
   margin-bottom: 1.5rem;
   padding: 1rem;
@@ -236,37 +202,6 @@ button:disabled {
   color: var(--cor-vermelho);
 }
 
-/* ==========================
-   Cadastros recentes
-========================== */
-
-#secao-recentes {
-  margin-top: 2rem;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-#secao-recentes h2 {
-  margin-top: 0;
-  color: var(--cor-primaria);
-}
-
-#lista-recentes {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.item-recente {
-  padding: 1rem;
-  border-left: 5px solid var(--cor-verde);
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
-}
-
 .categoria-badge {
   display: inline-block;
   margin-left: 0.5rem;
@@ -277,16 +212,6 @@ button:disabled {
   font-size: 0.8rem;
 }
 
-.recente-label {
-  margin-left: 0.5rem;
-  color: var(--cor-verde);
-  font-weight: bold;
-}
-
-/* ==========================
-   Rodapé
-========================== */
-
 #rodape {
   margin-top: 3rem;
   padding: 1.5rem;
@@ -294,10 +219,6 @@ button:disabled {
   background-color: var(--cor-primaria);
   color: white;
 }
-
-/* ==========================
-   Responsivo
-========================== */
 
 @media (max-width: 768px) {
 
