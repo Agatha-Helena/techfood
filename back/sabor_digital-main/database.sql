@@ -63,7 +63,7 @@ INSERT INTO produto (nome, descricao, preco, categoria, disponivel) VALUES
 ('Pizza Margherita', 'Pizza de mussarela, tomate e manjericão', 50.00, 'Pizza', true),
 ('Suco de Laranja', 'Suco natural 500ml', 12.00, 'Bebida', true);
 
---Usuarios
+-- Usuarios
 
 CREATE TABLE IF NOT EXISTS usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
